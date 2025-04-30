@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { FileAudioIcon as SoundOn, MegaphoneOffIcon as SoundOff, ChevronDown } from "lucide-react"
 
 import "./App.css"
-import AudioPlayer from "./components/AudioPlayer"
 import Footer from "./components/Footer"
 import CallToAction from "./components/CallToAction"
 import MoonshotAreas from "./components/MoonshotAreas"
@@ -64,9 +63,6 @@ function App() {
       >
         {soundEnabled ? <SoundOn size={20} /> : <SoundOff size={20} />}
       </button>
-
-      {/* Audio player (hidden) */}
-      {soundEnabled && <AudioPlayer />}
 
       {/* Main content */}
       <div className="relative z-10">
